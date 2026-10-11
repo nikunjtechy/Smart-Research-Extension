@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Screener Smart Research</title>
+    <style>
+        :root { --bg: #ffffff; --page: #f1f4f8; --ink: #222024; --muted: #4b5158; --faint: #6c757d; --lines: #e6e8eb; --link: #1a69af; --inset: #f1f3f5; }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #212531; --page: #14161f; --ink: #e9ecf3; --muted: #c2c9d6; --faint: #9aa3b4; --lines: #333a4a; --link: #7fb4e0; --inset: #1a1e28; }
+        }
+        body { margin: 0; padding: 24px 16px 48px; background: var(--page); color: var(--ink);
+               font: 15px/1.6 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+        main { max-width: 760px; margin: 0 auto; padding: 28px clamp(18px, 5vw, 40px); background: var(--bg); border: 1px solid var(--lines); border-radius: 12px; }
+        h1 { margin: 0 0 4px; font-size: 24px; font-weight: 600; letter-spacing: -0.2px; }
+        h2 { margin: 28px 0 8px; font-size: 16px; font-weight: 600; }
+        p, li { color: var(--muted); }
+        p { margin: 0 0 10px; }
+        ul { margin: 0 0 10px; padding-left: 20px; }
+        li { margin: 4px 0; }
+        code { padding: 1px 5px; border-radius: 4px; background: var(--inset); font: 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-wrap: anywhere; }
+        a { color: var(--link); }
+        .meta { color: var(--faint); font-size: 13px; }
+        .summary { margin: 18px 0 0; padding: 12px 14px; border: 1px solid var(--lines); border-radius: 8px; background: var(--inset); }
+        .summary p { margin: 0; color: var(--ink); }
+        table { width: 100%; border-collapse: collapse; margin: 0 0 10px; font-size: 14px; }
+        th, td { padding: 7px 8px; border-bottom: 1px solid var(--lines); text-align: left; vertical-align: top; color: var(--muted); }
+        th { color: var(--ink); font-weight: 600; }
+        .scroll { overflow-x: auto; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Screener Smart Research, version 2.3.0 &middot; Last updated 7 October 2026</p>
+
+    <div class="summary">
+        <p>The extension collects nothing. It has no server, no account, no analytics and no advertising. Everything it computes is computed in your browser from the Screener page you are viewing, and nothing is sent to its author or to any third party. Contributions are optional and are paid outside the extension, in your own UPI app.</p>
+    </div>
+
+    <h2>What the extension does</h2>
+    <p>Screener Smart Research runs only on company pages of <code>https://www.screener.in/company/</code>. When you ask for it, it reads the financial tables on the page you have open and shows ratios, screens and charts calculated from them, inside that page.</p>
+
+    <h2>Information it collects</h2>
+    <p>None. The extension does not collect, transmit, sell or share personal information, browsing history, the companies you look at, or anything you type. Its author receives no data from it of any kind.</p>
+
+    <h2>Requests it makes</h2>
+    <p>The extension talks to one website only: Screener itself, the site you are already on. It makes these requests only when you open a view that needs them, with your existing Screener session, exactly as the page could:</p>
+    <ul>
+        <li>the company pages of the peers Screener lists (or that you add), for the Peers tab and relative valuation;</li>
+        <li>Screener's own data endpoints for price and valuation history, for the Valuation tab;</li>
+        <li>Screener's own data endpoint for daily closing prices, one request per calendar year, for the Monthly Returns tab;</li>
+        <li>Screener's company search, when you search for a peer to add.</li>
+    </ul>
+    <p>It contacts no other server. Requests are paced, cached and capped so the extension does not burden Screener. These requests carry nothing about you beyond what your browser already sends to Screener on every page you open there; the extension adds no identifier, tracker or data of its own.</p>
+
+    <h2>What it stores, and where</h2>
+    <p>What you write in the Notes &amp; Checklist tab is kept in the extension's own storage on your device (<code>chrome.storage.local</code>, the <code>storage</code> permission), where the site's scripts cannot read or clear it:</p>
+    <div class="scroll">
+    <table>
+        <thead><tr><th>Stored item</th><th>What it holds</th><th>Kept for</th></tr></thead>
+        <tbody>
+            <tr><td><code>notes:&hellip;</code></td><td>Your note on a company, with the company's name and page address, and when you last changed it.</td><td>Until you delete it</td></tr>
+            <tr><td><code>checks:&hellip;</code></td><td>Which checklist items you have ticked for a company.</td><td>Until you untick or delete them</td></tr>
+            <tr><td><code>checklist:&hellip;</code></td><td>Your edits to a checklist template: changed ranges, removed items, items you added.</td><td>Until you restore the template</td></tr>
+        </tbody>
+    </table>
+    </div>
+    <p>Settings &rsaquo; Stored data has a button that deletes all of it at once; uninstalling the extension removes it too. It is never sent anywhere and the author cannot see it.</p>
+    <p>The extension also keeps a few items in your browser's storage for the screener.in site, on your device only:</p>
+    <div class="scroll">
+    <table>
+        <thead><tr><th>Stored item</th><th>What it holds</th><th>Kept for</th></tr></thead>
+        <tbody>
+            <tr><td><code>ssr-prefs</code></td><td>Your settings: shown tabs and their order, the tab that opens first, colours, shortcuts.</td><td>Until you change or reset them</td></tr>
+            <tr><td><code>ssr-peers:&hellip;</code></td><td>The peer set you chose for a company, if you changed it.</td><td>Until you restore the default</td></tr>
+            <tr><td><code>ssr-cache:&hellip;</code></td><td>Peer and market figures already fetched from Screener, so they are not requested again. Public market data only, nothing about you.</td><td>Up to 24 hours; month-end prices of finished years up to 30 days</td></tr>
+            <tr><td><code>ssr-http:&hellip;</code></td><td>Counters that pace and cap the extension's requests to Screener.</td><td>Up to a day</td></tr>
+            <tr><td><code>ssr-debug</code></td><td>A diagnostic switch, present only if you set it yourself.</td><td>Until you remove it</td></tr>
+        </tbody>
+    </table>
+    </div>
+    <p>These items never leave your device. You can remove the cache from the extension's Settings, and all of them by clearing site data for screener.in or uninstalling the extension.</p>
+
+    <h2>Files it creates</h2>
+    <p>The Export button writes an Excel workbook in your browser and saves it through your browser's normal download. The file is not uploaded anywhere, and once saved it is yours to keep, share or delete; the author has no access to it. Each workbook carries a line naming the extension, and its cover names the author with links to the author's public profiles. Those cells are protected against accidental editing; this is a convenience, not a security measure, and the rest of the workbook is yours to edit.</p>
+
+    <h2>Contributions</h2>
+    <p>While the analysis is open, a coffee button opens an optional contribution dialog showing the author's UPI ID, a UPI QR code and links to the author's LinkedIn and X profiles.</p>
+    <ul>
+        <li><strong>Voluntary gift.</strong> A contribution is a voluntary, unconditional gift towards the author's independent work. It is not a purchase, a subscription, a donation to a charity or a fee for any product, service, feature, support or advice. It creates no contract, account, membership or relationship of any kind, including any adviser&ndash;client or research relationship, and it entitles you to nothing: the extension and every feature in it stay the same, and free, for everyone.</li>
+        <li><strong>Made in your own app.</strong> Any payment is initiated, authorised and completed by you, in the UPI app of your choice, and is processed by your bank, the author's bank and the UPI network under their own terms. The extension does not process, see, handle, store or record any payment, amount, account, card, PIN or other payment detail, and it does not know whether you contributed. The QR code is an image packaged with the extension, so opening the dialog sends no request anywhere.</li>
+        <li><strong>Check before you pay.</strong> Before confirming, check in your UPI app that the payee shown is <strong>Nikunj Bansal</strong> and that the amount is the one you intend. The author is not responsible for a payment sent to a different payee, an amount entered in error, or a payment that fails, is delayed, duplicated or reversed by a bank or the UPI network; such questions are for your UPI app or bank.</li>
+        <li><strong>What the payee sees.</strong> As with any UPI transfer, the payment itself shows the payee, in their own bank or UPI app, the details the UPI system shares with a payee, such as the sender&rsquo;s name, UPI ID, amount and time. These come from the UPI system, not from the extension. The extension stores nothing about contributions, and the author does not collect, compile, sell or share these details, or use them to contact you or for marketing.</li>
+        <li><strong>Refunds.</strong> Because a contribution is a gift, it is not refundable as of right. If you sent one by mistake, contact the author promptly at the address at the end of this policy; any refund is at the author's discretion and is made only to the account it came from.</li>
+        <li><strong>Taxes.</strong> No invoice or tax receipt is issued, and a contribution is not a tax-deductible donation. Any tax treatment on your side is your own responsibility.</li>
+        <li><strong>Other sites.</strong> The LinkedIn and X links open those sites in a new tab. UPI apps, banks, LinkedIn and X are independent services run under their own terms and privacy policies, which govern anything you do there; the author does not control them and is not responsible for them.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>The extension asks for access to <code>https://www.screener.in/company/*</code>, and for <code>storage</code>, the extension's own storage on your device, used only for your notes, ticks and checklist edits. It requests no access to your tabs, history, cookies, downloads or any other site, and it uses no remote code.</p>
+
+    <h2>Data from Screener and its accuracy</h2>
+    <p>Every figure the extension shows or exports is calculated from data published by Screener.in: the tables on the page you are viewing, and the prices and other series Screener serves to that page. The extension does not produce, buy, correct or independently verify any of this data. Its results can be only as accurate, complete and current as that data, and any error, omission, delay or adjustment in it carries through to them. Where a tab explains how a figure is calculated, that explanation describes the calculation only, not the correctness of the underlying data. Verify any figure that matters to you against the company's filings, the exchange or another source you trust.</p>
+
+    <h2>No warranty and limitation of liability</h2>
+    <p>The extension, everything it shows and every file exported from it are provided free of charge, &ldquo;as is&rdquo; and &ldquo;as available&rdquo;, without warranty of any kind, express or implied, including any warranty of accuracy, completeness, timeliness, reliability, merchantability, fitness for a particular purpose or non-infringement, and without any promise that it will work without interruption or error or remain available. To the fullest extent permitted by law, the author is not liable for any direct, indirect, incidental, consequential, special or exemplary loss or damage, including loss of money, profits, data or opportunity, arising from the use of, or inability to use, the extension, its figures or its exported files, even if advised of the possibility. Where the law does not allow a limitation, liability is limited to the smallest extent it permits.</p>
+
+    <h2>Not investment advice</h2>
+    <p>Screener Smart Research calculates ratios, screens and model outputs from the figures published on this page. It is not investment advice, not a research report, and not a recommendation to buy, sell or hold any security. It is not a SEBI-registered investment adviser or research analyst.</p>
+    <p>A reading such as “Strong”, “Safe”, “Low risk”, “Caution”, “Weak”, “High risk”, etc. or a percentile describes a number against a fixed rule or the company’s own history; it is not a rating of the company or a view on its shares. Model values follow from the assumptions entered and are not price targets. Figures may be incomplete, delayed or wrong: verify them against the company’s filings, and consult a SEBI-registered investment adviser before making any investment decision.</p>
+    <p>This extension, and any file exported from it, is provided “as is” for educational and analytical purposes only, with no warranty of accuracy, completeness or fitness for any purpose. You use it entirely at your own risk: every decision you take, and any loss or damage that follows from it, including loss of money, is solely your own responsibility. To the fullest extent permitted by law, the author accepts no liability for the figures or for any use made of them.</p>
+
+    <h2>Screener</h2>
+    <p>This extension is an independent project. It is not affiliated with, endorsed by, sponsored by or operated by Screener.in, its owners or any stock exchange; names are used only to say which site it works on. Your use of screener.in remains subject to Screener's own terms and privacy policy, and you are responsible for using it in line with them.</p>
+
+    <h2>Chrome Web Store disclosures</h2>
+    <p>The extension's use of information complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. It does not sell user data, does not use or transfer data for purposes unrelated to its single purpose (analysing the Screener company page you are viewing), does not use or transfer data to determine creditworthiness or for lending, and does not allow humans to read user data. Since it collects no user data, there is nothing to transfer.</p>
+
+    <h2>Security</h2>
+    <p>Everything stays on your device, so there is no account to breach and no server holding your data. The extension contains no remote code: all of its code ships in the package reviewed by the Chrome Web Store. Your notes and settings are as safe as your own browser profile; anyone with access to it can read them.</p>
+
+    <h2>Children</h2>
+    <p>The extension is meant for adults researching listed companies. It collects no information from anyone, children included, and contributions should be made only by adults using their own payment accounts.</p>
+
+    <h2>Your choices</h2>
+    <p>You decide what the extension does: it analyses a page only when you ask, fetches extra data only for the views you open, and stores notes only when you write them. You can delete stored data from Settings at any time, or remove everything by uninstalling the extension.</p>
+
+    <h2>Governing law</h2>
+    <p>This policy and any dispute about the extension are governed by the laws of India, without regard to conflict-of-law rules, subject to any rights you have under the mandatory law of the place where you live.</p>
+
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the date above changes with it and the new text ships with the extension; continuing to use the extension after a change means you accept the updated policy. For any question about this policy, the extension or a contribution, write to <a href="mailto:nikunj18bansal@gmail.com">nikunj18bansal@gmail.com</a>.</p>
+</main>
+</body>
+</html>
